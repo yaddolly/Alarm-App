@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --timer-bg-color: rgb(52, 52, 74);
+  --button-bg-color: rgb(240, 247, 87);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(29, 29, 35);
+}
+
+header > h1 {
+  margin: 30px 0;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.timer-container *,
+.active-timer * {
+  background-color: var(--timer-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container *,
+#current-timers-container,
+.active-timer * {
+  font-size: 1.15em;
+}
+
+.timer-info {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+
+.time-inputs,
+.active-time-display {
+  display: flex;
+  margin-inline: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-inputs *,
+.active-time-display * {
+  margin: 10px;
+}
+
+.hour-input,
+.minute-input,
+.second-input,
+.hour-display,
+.minute-display,
+.second-display {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  border: none;
+  font-size: 1.4em;
+}
+
+.hour-input:focus,
+.minute-input:focus,
+.second-input:focus,
+.hour-input:not(:placeholder-shown),
+.minute-input:not(:placeholder-shown),
+.second-input:not(:placeholder-shown) {
+  border: none;
+  outline: none;
+  text-decoration: underline;
+}
+
+.hour-input::placeholder,
+.minute-input::placeholder,
+.second-input::placeholder {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+.set-btn,
+.delete-btn {
+  border: none;
+  background-color: var(--button-bg-color);
+  color: #000;
+  padding: 5px 35px;
+  border-radius: 30px;
+}
+
+.delete-btn {
+  padding: 5px 20px;
+}
+
+#current-timers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#current-timers-container h2 {
+  margin: 40px;
+  padding: 15px 120px;
+  border-radius: 50px;
+  font-size: 1.5em;
+  font-weight: 500;
+  background-color: rgb(57, 57, 62);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alarm App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Multiple Timers App</h1>
+    </header>
+    <main>
+      <div class="timer-container">
+        <form id="form" class="timer-info">
+          <div>
+            <p>Set Time :</p>
+          </div>
+          <div class="time-inputs">
+            <input
+              class="hour-input"
+              type="text"
+              name="hours"
+              placeholder="hh"
+              required
+            />
+            <p>:</p>
+            <input
+              class="minute-input"
+              type="text"
+              name="minutes"
+              maxlength="2"
+              placeholder="mm"
+              required
+            />
+            <p>:</p>
+            <input
+              class="second-input"
+              type="text"
+              name="seconds"
+              maxlength="2"
+              placeholder="ss"
+              required
+            />
+          </div>
+          <div>
+            <button class="set-btn">Set</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="current-timers-container">
+        <h2>Current Timers</h2>
+        <div class="active-timer">You have no timers currently!</div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
